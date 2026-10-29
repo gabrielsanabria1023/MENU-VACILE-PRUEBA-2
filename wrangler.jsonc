@@ -1,12 +1,7 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "menu-vacile-prueba-2",
-  "main": "_worker.js",
   "compatibility_date": "2026-10-23",
   "observability": { "enabled": true },
-  "assets": {
-    "directory": ".",
-    "binding": "ASSETS",
-    "run_worker_first": ["/api/*"]
-  }
+  "assets": { "directory": "." }
 }
