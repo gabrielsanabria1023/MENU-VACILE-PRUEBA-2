@@ -809,7 +809,7 @@
 
   // Aviso solo si el archivo de estilos no se cargó (para detectar una subida incompleta a GitHub)
   window.addEventListener("load", function () {
-    if (window.getComputedStyle(document.body).backgroundColor !== "rgb(241, 235, 220)") {
+if (!window.getComputedStyle(document.documentElement).getPropertyValue("--morado").trim()) {
       if (window.console) console.error("No se cargó vacile.css");
       var aviso = el("div", null, "No se cargó el archivo vacile.css. Verifica que esté subido junto a index.html en tu repositorio.");
       aviso.style.cssText = "padding:12px 16px;background:#fff3cd;color:#5c3b00;font:14px system-ui,sans-serif";
