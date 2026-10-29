@@ -1263,3 +1263,8 @@ html[data-dir="atras"]::view-transition-new(root) { animation-name: entra-izq; }
   clip: rect(0 0 0 0);
   white-space: nowrap;
 }
+body { background: #34134A; }
+.seccion h2, .grupo__titulo, .dom h2 { color: #F1EBDC; }
+.seccion__mas { color: #F9A50D; }
+.zonas__estado { color: #EFE6F6; }
+:focus-visible { outline-color: #F9A50D; }
